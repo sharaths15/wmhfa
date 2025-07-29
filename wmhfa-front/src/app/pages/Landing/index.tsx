@@ -91,7 +91,7 @@ const Header = () => {
             href="#"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-secondary text-white px-5 py-2 rounded-full font-semibold shadow-lg hover:shadow-xl transition-shadow"
+            className="bg-[#10B981] text-white px-5 py-2 rounded-full font-semibold shadow-lg hover:shadow-xl transition-shadow"
           >
             Join Now
           </motion.a>
@@ -128,7 +128,7 @@ const Header = () => {
               </a>
               <a
                 href="#"
-                className="bg-secondary text-white px-6 py-2 rounded-full font-semibold"
+                className="bg-[#10B981] text-white px-6 py-2 rounded-full font-semibold"
               >
                 Join Now
               </a>
@@ -176,7 +176,7 @@ const HeroSection = () => {
             href="#pricing"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-secondary text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:bg-green-500 transition-all"
+            className="bg-[#10B981] text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:bg-green-500 transition-all"
           >
             Join The Community
           </motion.a>
@@ -262,7 +262,7 @@ const WhyMHFAider = () => {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="bg-light-bg p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow"
             >
-              <div className="text-secondary text-4xl mb-4">{pillar.icon}</div>
+              <div className="text-[#10B981] text-4xl mb-4">{pillar.icon}</div>
               <h3 className="text-xl font-bold text-primary mb-2">
                 {pillar.title}
               </h3>
@@ -489,7 +489,7 @@ const PricingSection = () => {
               onChange={() => setIsAnnual(!isAnnual)}
               className="sr-only peer"
             />
-            <div className="w-14 h-8 bg-gray-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-1 after:left-[4px] after:bg-white after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-secondary"></div>
+            <div className="w-14 h-8 bg-gray-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-1 after:left-[4px] after:bg-white after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-[#10B981]"></div>
           </label>
           <span className="font-medium text-gray-600">Annual</span>
           <span className="bg-green-100 text-green-800 text-xs font-semibold ml-2 px-2.5 py-0.5 rounded-full">
@@ -506,12 +506,12 @@ const PricingSection = () => {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className={`rounded-xl border p-8 flex flex-col ${
                 plan.popular
-                  ? "border-secondary shadow-2xl relative"
+                  ? "border-[#10B981] shadow-2xl relative"
                   : "border-gray-200 shadow-lg"
               }`}
             >
               {plan.popular && (
-                <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-secondary text-white px-4 py-1 rounded-full text-sm font-semibold">
+                <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#10B981] text-white px-4 py-1 rounded-full text-sm font-semibold">
                   Most Popular
                 </div>
               )}
@@ -543,7 +543,7 @@ const PricingSection = () => {
               <ul className="space-y-4 mb-8 flex-grow">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-center gap-3">
-                    <FiCheckCircle className="text-secondary w-5 h-5 flex-shrink-0" />
+                    <FiCheckCircle className="text-[#10B981] w-5 h-5 flex-shrink-0" />
                     <span className="text-gray-600">{feature}</span>
                   </li>
                 ))}
@@ -554,7 +554,7 @@ const PricingSection = () => {
                 whileTap={{ scale: 0.95 }}
                 className={`w-full text-center block rounded-full py-3 font-bold mt-auto ${
                   plan.popular
-                    ? "bg-secondary text-white"
+                    ? "bg-[#10B981] text-white"
                     : "bg-accent text-white"
                 }`}
               >
@@ -582,7 +582,7 @@ const FinalCTA = () => (
         href="#pricing"
         whileHover={{ scale: 1.05, y: -2 }}
         whileTap={{ scale: 0.95 }}
-        className="bg-secondary text-white px-10 py-5 rounded-full font-bold text-xl shadow-xl hover:bg-green-500 transition-all inline-block"
+        className="bg-[#10B981] text-white px-10 py-5 rounded-full font-bold text-xl shadow-xl hover:bg-green-500 transition-all inline-block"
       >
         Become a Member Today
       </motion.a>

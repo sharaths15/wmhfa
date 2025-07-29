@@ -117,14 +117,17 @@ export const SignupPage = () => {
           disabled={isSubmitting}
           whileHover={{ scale: 1.02, y: -2 }}
           whileTap={{ scale: 0.98 }}
-          className="w-full mt-6 bg-secondary text-white font-bold py-3 px-4 rounded-md hover:bg-green-500 transition-all shadow-lg disabled:bg-gray-400"
+          className="w-full mt-6 bg-[#10B981] text-white font-bold py-3 px-4 rounded-md hover:bg-green-500 transition-all shadow-lg disabled:bg-gray-400"
         >
           {isSubmitting ? "Creating Account..." : "Create Account"}
         </motion.button>
 
         <p className="mt-8 text-center text-sm text-gray-600">
           Already have an account?{" "}
-          <Link to="/login" className="font-medium text-accent hover:underline">
+          <Link
+            to="/login"
+            className="font-medium text-[#3B82F6] hover:underline"
+          >
             Log In
           </Link>
         </p>

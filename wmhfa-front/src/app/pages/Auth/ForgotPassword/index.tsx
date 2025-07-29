@@ -53,7 +53,7 @@ export const ForgotPasswordPage = () => {
           disabled={isSubmitting}
           whileHover={{ scale: 1.02, y: -2 }}
           whileTap={{ scale: 0.98 }}
-          className="w-full mt-6 bg-secondary text-white font-bold py-3 px-4 rounded-md hover:bg-green-500 transition-all shadow-lg disabled:bg-gray-400"
+          className="w-full mt-6 bg-[#10B981] text-white font-bold py-3 px-4 rounded-md hover:bg-green-500 transition-all shadow-lg disabled:bg-gray-400"
         >
           {isSubmitting ? "Sending Link..." : "Send Reset Link"}
         </motion.button>
@@ -61,7 +61,7 @@ export const ForgotPasswordPage = () => {
         <div className="mt-8 text-center">
           <a
             href="/login"
-            className="font-medium text-accent hover:underline flex items-center justify-center gap-2"
+            className="font-medium text-[#3B82F6] hover:underline flex items-center justify-center gap-2"
           >
             <FiArrowLeft />
             Back to Login

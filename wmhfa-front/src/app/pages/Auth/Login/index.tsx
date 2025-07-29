@@ -81,7 +81,7 @@ export const LoginPage = () => {
         <div className="text-right mb-6">
           <Link
             to="/forgot-password"
-            className="text-sm text-accent hover:underline"
+            className="text-sm text-[#3B82F6] hover:underline"
           >
             Forgot Password?
           </Link>
@@ -98,7 +98,7 @@ export const LoginPage = () => {
           disabled={isSubmitting}
           whileHover={{ scale: 1.02, y: -2 }}
           whileTap={{ scale: 0.98 }}
-          className="w-full bg-secondary text-white font-bold py-3 px-4 rounded-md hover:bg-green-500 transition-all shadow-lg disabled:bg-gray-400"
+          className="w-full bg-[#10B981] text-white font-bold py-3 px-4 rounded-md hover:bg-green-500 transition-all shadow-lg disabled:bg-gray-400"
         >
           {isSubmitting ? "Signing In..." : "Log In"}
         </motion.button>
@@ -127,7 +127,7 @@ export const LoginPage = () => {
           Don't have an account?{" "}
           <Link
             to="/signup"
-            className="font-medium text-accent hover:underline"
+            className="font-medium text-[#3B82F6] hover:underline"
           >
             Sign Up
           </Link>
