@@ -3,9 +3,11 @@ dotenv.config();
 
 import { createApp } from './app';
 import { config } from './config/env';
+import { connectToDatabase } from './utils/mongoose';
 
 const start = async () => {
   try {
+    await connectToDatabase();
     const app = await createApp();
 
     await app.listen({

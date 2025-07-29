@@ -32,7 +32,3 @@ coverage/
 # OS
 .DS_Store
 Thumbs.db
-
-# Temporary folders
-tmp/
-temp/
