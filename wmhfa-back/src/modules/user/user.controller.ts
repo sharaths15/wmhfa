@@ -69,7 +69,7 @@ export async function loginHandler(
     reply.setCookie('token', token, {
       path: '/',
       httpOnly: true,
-      secure: true,
+      sameSite: 'lax',
     });
 
     return reply.code(200).send({ token });

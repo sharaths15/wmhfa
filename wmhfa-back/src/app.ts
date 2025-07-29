@@ -35,6 +35,11 @@ export const createApp = async (): Promise<FastifyInstance> => {
 
   await app.register(fCookie);
 
+  await app.register(cors, {
+    origin: true,
+    credentials: true,
+  });
+
   app.decorate(
     'authenticate',
     async (request: FastifyRequest, reply: FastifyReply) => {
@@ -47,11 +52,6 @@ export const createApp = async (): Promise<FastifyInstance> => {
   );
 
   await app.register(userRoutes, { prefix: '/api/users' });
-
-  await app.register(cors, {
-    origin: true,
-    credentials: true,
-  });
 
   await app.register(healthRoutes, { prefix: '/api/v1' });
 
